@@ -16,3 +16,159 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+
+/* ===== HW-09 custom styles ===== */
+
+body {
+  margin: 0;
+  padding: 24px 0 0;
+}
+
+.gallery {
+  width: 1128px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 200px;
+  gap: 24px;
+}
+
+.gallery-link {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+}
+
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===== SimpleLightbox: overlay + controls colors ===== */
+
+/* Overlay behind the image */
+.sl-overlay {
+  background: rgba(46, 47, 66, 0.8) !important;
+  /* #2E2F42 @ 80% */
+}
+
+/* Arrows (prev/next), close button (X), and counter text */
+.sl-wrapper .sl-navigation button,
+.sl-wrapper .sl-close,
+.sl-wrapper .sl-counter {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+/* (Optional) make sure buttons have no weird background */
+.sl-wrapper .sl-navigation button,
+.sl-wrapper .sl-close {
+  background: transparent !important;
+}
+
+/* (Optional) hover/focus still white */
+.sl-wrapper .sl-navigation button:hover,
+.sl-wrapper .sl-close:hover {
+  color: #ffffff !important;
+}
+
+/* ===== HW-09 Form styles (match Figma) ===== */
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #f5f5f5;
+}
+
+/* Outer box (feedback box) */
+.feedback-form {
+  width: 408px;
+  padding: 24px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  /* space between inner box and button */
+  box-sizing: border-box;
+}
+
+/* Inner box (Email + Message box) */
+.feedback-form__fields {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Label: gap between text and input/textarea */
+.feedback-form__label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  /* ✅ space between “Email/Message” text and field */
+  color: #2e2f42;
+  font-size: 16px;
+}
+
+/* Fields */
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  padding: 8px 16px;
+
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+.feedback-form input {
+  height: 40px;
+}
+
+.feedback-form textarea {
+  height: 80px;
+  /* optional */
+}
+
+/* Hover state */
+.feedback-form input:hover,
+.feedback-form textarea:hover {
+  border-color: #000000;
+}
+
+/* Active/focus state */
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  border-color: #808080;
+  outline: none;
+}
+
+/* Button (optional style) */
+.feedback-form button[type="submit"] {
+  width: 95px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background: #4e75ff;
+  padding: 8px 16px;
+  color: #fff;
+  cursor: pointer;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.feedback-form button[type="submit"]:hover {
+  background: #6c8cff;
+}

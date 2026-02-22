@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GOIT-JS-HW-09</title>
+    <title>Feedback form</title>
 
     <!-- Montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,10 +19,23 @@
 
   <body>
     <main class="container">
-      <ul class="nav">
-        <li><a class="nav__link" href="./1-gallery.html">Gallery</a></li>
-        <li><a class="nav__link" href="./2-form.html">Form</a></li>
-      </ul>
+      <form class="feedback-form" autocomplete="off">
+        <div class="feedback-form__fields">
+          <label class="feedback-form__label">
+            Email
+            <input type="email" name="email" autofocus />
+          </label>
+
+          <label class="feedback-form__label">
+            Message
+            <textarea name="message" rows="8"></textarea>
+          </label>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
     </main>
+
+    <script type="module" src="./js/2-form.js"></script>
   </body>
 </html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback form</title>
+
+    <!-- Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Your main styles -->
+    <script type="module" crossorigin src="/goit-js-hw-09/2-form.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-09/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-09/assets/styles-CN4q5mEX.css">
+  </head>
+
+  <body>
+    <main class="container">
+      <form class="feedback-form" autocomplete="off">
+        <div class="feedback-form__fields">
+          <label class="feedback-form__label">
+            Email
+            <input type="email" name="email" autofocus />
+          </label>
+
+          <label class="feedback-form__label">
+            Message
+            <textarea name="message" rows="8"></textarea>
+          </label>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+
+  </body>
+</html>
